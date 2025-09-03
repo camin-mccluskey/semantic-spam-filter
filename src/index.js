@@ -1,5 +1,5 @@
 /**
- * Flexible Spam Nuker for Gmail
+ * Semantic Spam Delete for Gmail
  * - Scans recent emails
  * - Uses OpenAI API for configurable semantic spam detection
  * - Moves detected spam to Gmail Spam
@@ -7,7 +7,7 @@
  * Instructions:
  * 1. Copy this script into https://script.google.com/
  * 2. Replace OPENAI_API_KEY with your own key from https://platform.openai.com/
- * 3. Save, run `filterRecruiterSpam()`, and set up a time-based trigger (e.g. hourly)
+ * 3. Save, run `main()`, and set up a time-based trigger (e.g. hourly)
  */
 
 const config = {
@@ -22,7 +22,7 @@ var OPENAI_API_KEY = PropertiesService.getScriptProperties().getProperty('OPENAI
 
 
 // Main function: scans inbox, checks for spam, moves to spam
-function filterRecruiterSpam() {
+function main() {
   // Search for emails from the last 1 day (adjust as needed)
   var threads = GmailApp.search('newer_than:1d');
   for (var i = 0; i < threads.length; i++) {

@@ -1,4 +1,4 @@
-# Flexible Spam Nuke - Gmail Apps Script Template
+# Semantic Spam Delete - Gmail Apps Script Template
 [![clasp](https://img.shields.io/badge/built%20with-clasp-4285f4.svg)](https://github.com/google/clasp)
 
 Allows filtering and flagging Gmail emails spam using natural language. Set up a cron trigger to clear your inbox of the
@@ -15,7 +15,7 @@ Now initialise a new apps script:
 pnpm run init
 ```
 
-This will push a new standalone script to your Google Drive with the name 'Flexible Spam Nuke'. Run `clasp open-script` 
+This will push a new standalone script to your Google Drive with the name 'Semantic Spam Delete'. Run `clasp open-script` 
 to view the project. You'll now need to do 2 pieces of setup in the UI.
 
 ### Add your OpenAI API Key
@@ -39,8 +39,8 @@ defaults.
 
 ## Spam Detection Configuration
 
-Everyone's definition of spam is different, you can edit what you'd like to see less of in the `config.detect` field at 
-the top of the `./src/index.js` file.
+Everyone's definition of spam is different, you can edit the types of emails that you consider spam in the 
+`config.detect` field at the top of the `./src/index.js` file.
 
 ## Deployment
 
