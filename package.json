@@ -1,0 +1,17 @@
+{
+  "name": "flexible-spam-nuke-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init": "clasp create-script --title 'Flexible Spam Nuke' --rootDir ./src",
+    "deploy": "clasp create-deployment"
+  },
+  "keywords": [],
+  "author": "Camin McCluskey <mccluskey.camin@gmail.com> (https://camin.dev)",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1",
+  "dependencies": {
+    "@google/clasp": "3.0.6-alpha"
+  }
+}
