@@ -28,7 +28,7 @@ var OPENAI_API_KEY = PropertiesService.getScriptProperties().getProperty('OPENAI
 function main() {
   // Search for emails from the last 1 day (adjust as needed)
   var threads = GmailApp.search('newer_than:1d');
-  for (var i = 0; i < threads.length; i++) {
+  outer: for (var i = 0; i < threads.length; i++) {
     var messages = threads[i].getMessages();
     for (var j = 0; j < messages.length; j++) {
       var msg = messages[j];
@@ -39,7 +39,7 @@ function main() {
       var checkString = `<subject>${subject}</subject>\n<body>${body}</body>`
       if (isConfiguredSpam(checkString)) {
         threads[i].moveToSpam();
-        break;
+        break outer;
       }
     }
   }
