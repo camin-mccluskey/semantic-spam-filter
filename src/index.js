@@ -1,13 +1,16 @@
 /**
- * Semantic Spam Delete for Gmail
+ * Semantic Spam Filter for Gmail
  * - Scans recent emails
  * - Uses OpenAI API for configurable semantic spam detection
  * - Moves detected spam to Gmail Spam
  * 
- * Instructions:
+ * Instructions (manual):
  * 1. Copy this script into https://script.google.com/
- * 2. Replace OPENAI_API_KEY with your own key from https://platform.openai.com/
+ * 2. Set OPENAI_API_KEY with your own key from https://platform.openai.com/ in Script Properities
  * 3. Save, run `main()`, and set up a time-based trigger (e.g. hourly)
+ *
+ * Instructions (Github):
+ * 1. Follow instructions in README - https://github.com/camin-mccluskey/semantic-spam-filter
  */
 
 const config = {
