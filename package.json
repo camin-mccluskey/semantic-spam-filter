@@ -1,10 +1,11 @@
 {
-  "name": "semantic-spam-filter-template",
+  "name": "semantic-spam-filter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "init": "clasp create-script --title 'Semantic Spam Filter' --rootDir ./src",
+    "push": "clasp push -f",
     "deploy": "clasp create-deployment"
   },
   "keywords": [],

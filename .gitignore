@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/node,vim
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,vim
 
+## Clasp
+.clasp.json
+
 ### Node ###
 # Logs
 logs
